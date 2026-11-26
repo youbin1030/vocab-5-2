@@ -1,7 +1,6 @@
 const CONFIG = {
   SUPABASE_URL: "https://qvygwykewiaynzwpvkiz.supabase.co",
-  SUPABASE_ANON_KEY: "sb_publishable_hRRM_LpRPx2FMHDWWw6HmQ_LRvTk-yc
-"
+  SUPABASE_ANON_KEY: "sb_publishable_hRRM_LpRPx2FMHDWWw6HmQ_LRvTk-yc"
 };
 
 const SUPABASE_CONFIG = CONFIG;
