@@ -1,27 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Who Is He? · 영어 퀴즈 게임</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Jua&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<style>
-  .home { max-width: 560px; margin: 0 auto; min-height: 100vh; min-height: 100dvh; padding: 24px 18px; display: flex; flex-direction: column; justify-content: center; gap: 18px; }
-  .home .glass { padding: 30px 24px; text-align: center; }
-  .home a { display: flex; align-items: center; justify-content: center; height: 84px; font-size: 28px; text-decoration: none; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:," />
+  <title>상명 5학년 영어 단어 인증제 퀴즈</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Jua&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .home-wrap {
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .home-card {
+      width: 100%;
+      max-width: 720px;
+      padding: 44px 36px;
+      text-align: center;
+    }
+    .home-badge {
+      width: 84px;
+      height: 84px;
+      margin: 0 auto 20px;
+      border-radius: 28px;
+      background: linear-gradient(180deg, #A98FEA, #6A4BC8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 28px rgba(91, 63, 176, 0.28), inset 0 2px 0 rgba(255, 255, 255, 0.55);
+    }
+    .home-title {
+      font-size: 38px;
+      line-height: 1.25;
+      margin: 0 0 10px;
+      color: var(--ink);
+    }
+    .home-sub {
+      font-size: 21px;
+      margin: 0 0 36px;
+    }
+    .role-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .role-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 32px 20px;
+      border-radius: 28px;
+      text-decoration: none;
+      transition: transform 0.14s ease, box-shadow 0.14s ease;
+    }
+    .role-btn:hover {
+      transform: translateY(-3px);
+    }
+    .role-icon {
+      font-size: 52px;
+      line-height: 1;
+    }
+    .role-name {
+      font-size: 28px;
+    }
+    .role-desc {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    @media (max-width: 640px) {
+      .home-card { padding: 34px 22px; }
+      .home-title { font-size: 30px; }
+      .role-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-<main class="home">
-  <div class="glass">
-    <b class="en" style="font-size:48px;font-weight:700;display:block">Who Is He?</b>
-    <span class="muted" style="font-size:20px">3학년 영어 10단원 · 실시간 퀴즈 게임</span>
-  </div>
-  <a class="jelly btn-violet" href="teacher.html">선생님 화면</a>
-  <a class="jelly btn-amber" href="student.html">학생으로 들어가기</a>
-</main>
-</body>
-</html>
+  <main class="home-wrap">
+    <section class="glass home-card pop">
+      <div class="home-badge" aria-hidden="true">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="20" y1="20" x2="16.2" y2="16.2"></line>
+        </svg>
+      </div>
+
+      <h1 class="home-title">상명 5학년 영어 단어 인증제 퀴즈</h1>
+      <p class="home-sub muted">1~15주차 핵심 단어 90개 마스터 대결!</p>
+
+      <div class="role-grid">
+        <a href="teacher.html" class="jelly btn-violet role-btn">
+          <span class="role-icon" aria-hidden="true">👩‍🏫</span>
+          <span class="role-name">선생님 화면</span>
+          <span class="role-desc">방 만들기 · QR 띄우기</span>
+        </a>
+
+        <a href="student.html" class
